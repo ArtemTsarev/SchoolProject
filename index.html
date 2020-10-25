@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <main class = "page">
+
+        <section class="description" id = "theFirstBlock">
+
+            <div class="description__profile">
+                <div class="description__profile-information">
+                    <img src="./images/user.svg" alt="аватарка" class="description__profile-icon">
+                    <p class="description__profile-username">Гость</p>
+                </div>
+                <button class="description__profile-settings"></button>
+            </div>
+
+            <div class="description__wrapper"></div>
+                <h1 class="description__paragraph"><span class = "marker">2021 год - </span>Международный Год мира и доверия</h1>
+                <a href="" class="description__btn">
+                    <span class="description__button-text">Читать</span>
+                    <span class="description__waves"></span>
+                </a>
+        </section>
+
+
+
+    </main>
+
+
+    <section class="settings">
+        <div class="settings__wrapper">
+            <input type="text" class="settings__username" placeholder="Имя" value = "Гость" onchange="getUsername()">
+            
+            <p class="settings__warning"></p>
+
+            <div class="settings__personality">
+                <label class="settings__human">
+                        <span class="settings__personality-human-title">Мужской</span>
+                        <img src="./images/man.svg" alt="man" class="settings__man-img">
+
+                        <input type="radio" value = "1" class="icon-human settings__personality-man" name = "nameradio">
+                        <span class="fake"></span>
+                </label>
+
+                <label class = "settings__human">
+                    <span class="settings__personality-human-title">Женский</span>
+                    <img src="./images/woman.svg" alt="woman" class="settings__personality-woman">
+                    
+                    <input type="radio" value="2" class="icon-human settings__personality-woman" name = "nameradio">
+                    <span class="fake"></span>
+                </label>
+            </div>
+
+            
+            <button class="settings__complete" onclick="setUsername()">Сохранить</button>
+
+        </div>
+
+        <button class="settings__close"></button>
+    </section>
+    <script src = "main.js"></script>
+</body>
+</html>
