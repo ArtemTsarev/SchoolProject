@@ -42,18 +42,26 @@
             <div class="settings__personality">
                 <label class="settings__human">
                         <span class="settings__personality-human-title">Мужской</span>
-                        <img src="./images/man.svg" alt="man" class="settings__man-img">
+                        <img src="./images/man.svg" alt="man" class="settings__personality-icon settings__man-img">
 
-                        <input type="radio" value = "1" class="icon-human settings__personality-man" name = "nameradio">
-                        <span class="fake"></span>
+                        <input type="radio" value = "1" class="icon-human settings__personality-man" name = "nameradio" checked = "setManIcon()">
+                        <span class="fake" onclick="setManIcon()"></span>
                 </label>
 
                 <label class = "settings__human">
                     <span class="settings__personality-human-title">Женский</span>
-                    <img src="./images/woman.svg" alt="woman" class="settings__personality-woman">
+                    <img src="./images/woman.svg" alt="woman" class="settings__personality-icon settings__personality-woman">
                     
                     <input type="radio" value="2" class="icon-human settings__personality-woman" name = "nameradio">
-                    <span class="fake"></span>
+                    <span class="fake" onclick="setWomanIcon()"></span>
+                </label>
+
+                <label class = "settings__human">
+                    <span class="settings__personality-human-title">Неизвестно</span>
+                    <img src="./images/user.svg" alt="woman" class="settings__personality-icon settings__personality-inkognito">
+                    
+                    <input type="radio" value="3" class="icon-human settings__personality-woman" name = "nameradio" checked>
+                    <span class="fake" onclick="setInkognitoIcon()"></span>
                 </label>
             </div>
 

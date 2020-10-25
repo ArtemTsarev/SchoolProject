@@ -6,15 +6,14 @@ const name = document.querySelector(".description__profile-username");
 const username = settings.querySelector(".settings__username");
 const complete = settings.querySelector(".settings__complete");
 const body = document.querySelector("body");
-let newUsername;
-
+const icon = document.querySelector(".description__profile-icon");
+let usernameValue;
 
 
 const settingsClose = settings.querySelector('.settings__close').addEventListener('click', function(){
     settings.classList.add("settings");
     settings.classList.remove("settings-visiable");
     page.style.opacity = "1";
-    body.style.overflow = "scroll";
 });
 
 
@@ -25,11 +24,11 @@ const settingsBtn = menu.querySelector(".description__profile-settings").addEven
     settings.classList.remove("settings");
     settings.style.opacity = "109000000";
     page.style.opacity = ".3";
-    body.style.overflow = "hidden";
 });
 
 function getUsername(){
     let usernameValue = username.value;
+
     if(usernameValue.split('').length <= 3){
         warning.textContent = "Имя слишком короткое";
         username.style.borderLeft = "6px solid darkred";
@@ -53,15 +52,16 @@ function getUsername(){
         complete.classList.add("disabled");
     }
 
-    else if(usernameValue == "" || usernameValue == null){
+    else if(usernameValue == "" || usernameValue == null || (usernameValue.split("")[0] == " " && usernameValue.split("")[1] == "") || usernameValue == undefined){
         warning.textContent = "Имя не может быть пустым";
         username.style.borderLeft = "6px solid darkred";
         complete.setAttribute("disabled","");
         complete.classList.add("disabled");
     }   
+    
     else{
         warning.textContent = "";
-        newUsername = usernameValue;
+        newUsername = username.value;
         username.style.borderLeft = "6px solid green";
         complete.removeAttribute("disabled");
         complete.classList.remove("disabled");
@@ -69,8 +69,24 @@ function getUsername(){
 }
 
 function setUsername(){
-    name.textContent = newUsername;
+    name.textContent = username.value;
     settings.classList.add("settings");
     settings.classList.remove("settings-visiable");
     page.style.opacity = "1";
+}
+
+
+function setManIcon(){
+    icon.removeAttribute("src");
+    icon.setAttribute("src", "images/man.svg");
+}
+
+function setWomanIcon(){
+    icon.removeAttribute("src");
+    icon.setAttribute("src", "images/woman.svg");
+}
+
+function setInkognitoIcon(){
+    icon.removeAttribute("src");
+    icon.setAttribute("src", "images/user.svg");
 }

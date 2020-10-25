@@ -1,7 +1,13 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-repeat: no-repeat;
 }
+
+.no-scroll{
+    overflow: hidden;
+}
+
 
 button{
     border: none;
@@ -219,7 +225,7 @@ input{
     z-index: 10000;
     opacity: 1;
     border-radius: 20px;
-    overflow-y: scroll;
+
 }
 
 .settings{
@@ -277,7 +283,7 @@ input{
     font-family: Arial;
     font-size: 24px;
     width: 100%;
-    margin: 200px auto 20px auto;
+    margin: 100px auto 20px auto;
     color: #fff;
 }
 
@@ -348,10 +354,16 @@ input{
 }
 
 .settings__human{
-    max-width: 50%;
+    max-width: 183.08px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-
+.settings__personality-icon{
+    width: 183.08px;
+    height: 183.08px;
+}
 
 
 
