@@ -177,7 +177,8 @@ input{
 }
 
 .description__profile-icon{
-    width: 20%;
+    width: 10%;
+    margin-right: 5px;
     max-height: 50px;
 }
 

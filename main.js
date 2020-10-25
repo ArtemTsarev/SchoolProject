@@ -31,7 +31,6 @@ function getUsername(){
 
     if(usernameValue.split('').length <= 3){
         warning.textContent = "Имя слишком короткое";
-        username.style.borderLeft = "6px solid darkred";
         complete.setAttribute("disabled" , "");
         
     }else if(usernameValue.split('').includes(";")){
@@ -50,14 +49,9 @@ function getUsername(){
         warning.textContent = "Имя не может содержать больше 20 символов";
         complete.setAttribute("disabled", "");
         complete.classList.add("disabled");
+        username.style.borderLeft = "6px solid darkred";
     }
 
-    else if(usernameValue == "" || usernameValue == null || (usernameValue.split("")[0] == " " && usernameValue.split("")[1] == "") || usernameValue == undefined){
-        warning.textContent = "Имя не может быть пустым";
-        username.style.borderLeft = "6px solid darkred";
-        complete.setAttribute("disabled","");
-        complete.classList.add("disabled");
-    }   
     
     else{
         warning.textContent = "";
