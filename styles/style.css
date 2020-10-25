@@ -213,7 +213,7 @@ input{
 .settings-visiable{
     left: 50%;
     transform: translate(-50%);
-    width: 80%;
+    width: 100%;
     position: fixed;
     top: 0;
     display: flex;
@@ -226,7 +226,7 @@ input{
     z-index: 10000;
     opacity: 1;
     border-radius: 20px;
-
+    overflow-y: scroll;
 }
 
 .settings{
