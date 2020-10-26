@@ -2,6 +2,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-repeat: no-repeat;
+    font-family: Arial;
 }
 
 .no-scroll{
@@ -98,6 +99,7 @@ input{
     position: relative;
     overflow: hidden;
     animation: GoUp 1.5s forwards;
+    cursor: pointer;
 }
 
 .description__btn:hover .description__waves{
@@ -315,6 +317,8 @@ input{
 
 .icon-human:checked + .fake::before{
     opacity: 1;
+    transition: 1s;
+    transform: scale(10);
 }
 
 .settings__human{
@@ -329,6 +333,9 @@ input{
     border: 2px solid lightskyblue;
     margin: 0 auto;
     margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
 }
 
 .fake::before{
@@ -337,12 +344,14 @@ input{
     top: 50%;
     left: 50%;
     display: block;
-    height: 100%;
-    width: 100%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
     transform: translate(-50%, -50%); 
     background-color: lightskyblue;
     opacity: 0;
     transition: .3s;
+    cursor: pointer;
 }
 
 .settings__personality{
@@ -385,9 +394,32 @@ input{
     color: #fff;
     font-size: 25px;
     font-family: Arial;
-
 }
 
+
+.information__text:hover{
+    cursor: default;
+}
+
+.trust{
+    width: 80%;
+    margin: 70px auto 0 auto;
+    
+}
+
+.trust__title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: lightblue;
+}
+
+.trust__description {
+    font-size: 21px;
+    color: rgb(104, 169, 191);
+}
 
 
 

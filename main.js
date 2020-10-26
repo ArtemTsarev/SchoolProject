@@ -7,6 +7,7 @@ const username = settings.querySelector(".settings__username");
 const complete = settings.querySelector(".settings__complete");
 const body = document.querySelector("body");
 const icon = document.querySelector(".description__profile-icon");
+const InformationText = document.querySelector('.information__text');
 let usernameValue;
 
 
@@ -84,3 +85,7 @@ function setInkognitoIcon(){
     icon.removeAttribute("src");
     icon.setAttribute("src", "images/user.svg");
 }
+
+const linkToText = document.querySelector('.description__btn').addEventListener('click', function(){
+    InformationText.scrollIntoView();
+});
