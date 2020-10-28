@@ -531,10 +531,7 @@ input {
         font-size: 45px;
     }
 
-    .description__btn{
-        width: 30%;
-        height: 50px;
-    }
+    
 }
 
 @media screen and (max-width: 1080px){
@@ -542,9 +539,15 @@ input {
         font-size: 40px;
     }
 
-    .description__btn{
-        width: 50%;
-        height: 80px;
+}
+
+@media screen and (max-width: 894px){
+    .settings__personality{
+        flex-direction: column;
+    }
+
+    .settings__human{
+        margin: 0 auto 20px auto;
     }
 }
 
@@ -623,6 +626,11 @@ input {
     .peace-important__list{
         width: 100%;
     }
+
+    .description__profile-icon{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media screen and (max-width: 653px){
@@ -638,7 +646,7 @@ input {
     }
 
     .description{
-        max-height: 50vh;
+        max-height: 100vh;
     }
     .peace-important{
         flex-direction: column;
@@ -660,6 +668,11 @@ input {
         width: 60px;
         height: 60px;
     }
+
+    .description__profile-icon{
+        width: 50px;
+        height: 50px;
+    }
     
 }
 
@@ -679,7 +692,7 @@ input {
     }
 
     .description{
-        max-height: 50vh;
+        max-height: 100vh;
     }
     .peace-important{
         flex-direction: column;
