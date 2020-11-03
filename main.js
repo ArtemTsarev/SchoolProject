@@ -8,7 +8,6 @@ const complete = settings.querySelector(".settings__complete");
 const body = document.querySelector("body");
 const icon = document.querySelector(".description__profile-icon");
 const InformationText = document.querySelector('.information__text');
-let usernameValue;
 
 
 const settingsClose = settings.querySelector('.settings__close').addEventListener('click', function(){
@@ -28,6 +27,7 @@ const settingsBtn = menu.querySelector(".description__profile-settings").addEven
 });
 
 function getUsername(){
+    // username.value = "Ваше имя";
     let usernameValue = username.value;
 
     if(usernameValue.split('').length <= 3){
