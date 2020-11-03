@@ -87,7 +87,7 @@ input {
 .description__btn {
 	opacity: 0;
 	z-index: 5;
-	width: 45%;
+	width: 30%;
 	height: 60px;
 	display: flex;
 	justify-content: center;
@@ -384,7 +384,7 @@ input {
 
 .information {
 	width: 100vw;
-	background-color: lightskyblue;
+	background-color: rgb(123, 162, 205);
 }
 
 .information__text {
@@ -578,7 +578,7 @@ input {
     }
 
     .description__btn{
-        width: 40%;
+        width: 28%;
         height: 80px;
     }
 
@@ -594,7 +594,7 @@ input {
     }
 
     .description__btn{
-        width: 40%;
+        width: 30%;
         height: 60px;
     }
 
@@ -609,7 +609,7 @@ input {
     }
 
     .description__btn{
-        width: 40%;
+        width: 30%;
         height: 60px;
     }
 
@@ -624,7 +624,7 @@ input {
     }
 
     .description__btn{
-        width: 40%;
+        width: 30%;
         height: 60px;
     }
 
@@ -708,7 +708,7 @@ input {
     }
 
     .description__btn{
-        width: 40%;
+        width: 30%;
         height: 50px;
     }
 
