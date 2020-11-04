@@ -1,3 +1,5 @@
+@import url(../css/second.css);
+
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -53,7 +55,7 @@ input {
 	height: 100vh;
 	width: 100%;
 	position: relative;
-	background-image: url("../images/FullScrean.png");
+	background-image: url("../images/FullScrean.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -154,20 +156,27 @@ input {
 }
 
 .description__profile {
+	position: fixed;
+	top: 0;
+	right: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
 	width: 100%;
 	max-height: 10%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: lightskyblue;
+	background-color: rgba(173, 216, 230, 0.3);
+	border-bottom: 2px solid lightblue;
 	opacity: .7;
 	padding-left: 40px;
 	padding-right: 40px;
 	min-height: 80px;
+}
+
+.description__profile:hover{
+	/* Убирать затемнение при наведении на шапку */
+	transition: .4s;
+	background-color: rgba(173, 216, 230, 1);
 }
 
 .description__profile-information {
@@ -403,7 +412,7 @@ input {
 
 .trust {
 	width: 80%;
-	margin: 70px auto 0 auto;
+	margin: 30px auto 0 auto;
 
 }
 
