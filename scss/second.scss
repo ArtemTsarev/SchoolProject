@@ -1,5 +1,6 @@
 .say {
-    width: 80%;
+    min-width: 79%;
+    max-width: 80%;
     margin: 80px auto 0 auto;
     display: flex;
 }
@@ -67,12 +68,12 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    min-height: 400px;
+    min-height: 200px;
     font-family: 'Open Sans', sans-serif;
 }
 .footer__wrapper {
     width: 90%;
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
 }
 .footer__first-column {
@@ -84,10 +85,11 @@
     height: 100%;
 }
 .footer__title {
-    margin: 10px 0 45px 0;
+    margin: 10px 0 30px 0;
     font-size: 25px;
     color: #fff;
     width: 100%;
+    line-height: 1.5;
 }
 .footer__author {
     font-size: 14px;
@@ -108,7 +110,6 @@
     margin-bottom: 10px;
     font-size: large;
     width: 100%;
-    text-align: center;
     font-size: 14px;
 }
 
@@ -123,6 +124,10 @@
     padding: 0 30px 0 30px;
 }
 .footer__description {
+}
+
+.column{
+    width: 50%;
 }
 
 .message{
@@ -256,3 +261,49 @@
     }
 }
 
+@media screen and(max-width: 460px){
+
+    .say{
+        width: 100%;
+    }
+    
+} 
+
+@media screen and(max-width: 365px){
+
+    .say{
+        p{
+            font-size: 14px;
+        }
+    }
+    
+} 
+
+
+
+@media screen and(max-width: 435px){
+
+    .owl-carousel{
+        min-width: 100%;
+
+        img{
+            max-height: 350px;
+             }
+        }
+    }
+
+    .cloud{
+        height: 300px; 
+    }
+
+@media screen and (max-width: 325px){
+    .cloud{
+        height: 280px;
+        
+    }
+}
+
+
+
+
+ 
