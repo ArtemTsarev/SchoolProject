@@ -6,3 +6,34 @@
   max-width: 100%;
   height: auto;
 }
+
+.information-item {
+  width: 80%;
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-max-content;
+  height: max-content;
+  position: relative;
+}
+.information-item img {
+  max-width: 100%;
+  height: auto;
+  z-index: 20;
+}
+.information-item .information-item:hover .information-item__wrapper {
+  opacity: 0.7;
+}
+.information-item .information-item__wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: black;
+  z-index: 100;
+}

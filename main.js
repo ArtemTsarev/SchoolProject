@@ -8,6 +8,16 @@ const complete = settings.querySelector(".settings__complete");
 const body = document.querySelector("body");
 const icon = document.querySelector(".description__profile-icon");
 const InformationText = document.querySelector('.information__text');
+const biggerWinow = document.querySelector('.information-item-biggest');
+const moreSize = document.querySelector(".more__size").addEventListener('click', ()=>{
+    biggerWinow.style.display = "block";
+    page.style.opacity = ".2";
+});
+
+const closeBiggerWindow = document.querySelector(".information-item__image-close").addEventListener('click', ()=>{
+    biggerWinow.style.display = "none";
+    page.style.opacity = "1";
+});
 
 
 const settingsClose = settings.querySelector('.settings__close').addEventListener('click', function(){
@@ -88,4 +98,8 @@ function setInkognitoIcon(){
 
 const linkToText = document.querySelector('.description__btn').addEventListener('click', function(){
     InformationText.scrollIntoView();
+});
+
+const GoUp = document.querySelector(".message").addEventListener('click', ()=>{
+    menu.scrollIntoView();
 });

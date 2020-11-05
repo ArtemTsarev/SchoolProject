@@ -439,7 +439,7 @@ input {
 .peace {
 	width: 100%;
 	margin: 0 auto;
-	background-color: lightblue;
+	background-color: rgb(50, 126, 177);
 	padding: 30px 0 30px 0;
 
 }
@@ -542,6 +542,10 @@ input {
     border-radius: 50%;
 }
 
+.information-item:hover .information-item__wrapper{
+	opacity: .7;
+}
+
 
 
 
@@ -619,6 +623,11 @@ input {
 }
 
 @media screen and (max-width: 740px){
+
+	.information__text{
+		font-size: 13px;
+	}
+
     .description__paragraph{
         font-size: 25px;
     }
