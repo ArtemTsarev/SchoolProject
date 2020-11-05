@@ -569,8 +569,8 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    min-height: 100%;
+    width: 60%;
+    min-height: 70vh;
     position: fixed;
     z-index: 200000;
     display: none;
@@ -584,8 +584,8 @@ input {
 }
 .information-item__image-close {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: -10%;
+    right: -10%;
     z-index: 7777777777777777777;
     width: 10%;
     height: 10%;
