@@ -1,5 +1,11 @@
 @import url(../css/second.css);
 
+
+h2{
+	font-family: 'Bebas Neue', cursive;
+}
+
+
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -76,7 +82,7 @@ input {
 }
 
 .description__paragraph {
-	font-family: Arial;
+	font-family: 'Bebas Neue', cursive;
 	font-size: 50px;
 	color: lightskyblue;
 	z-index: 2;
@@ -668,7 +674,12 @@ input {
         text-align: center;
         padding: 20px;
         font-size: 25px;
-    }
+	}
+	
+	.description__profile{
+		position: absolute;
+
+	}
 
     .description__btn{
         width: 40%;
